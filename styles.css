@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#preload{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+#left, #right{
+    width: 50%;
+    height: 100%;
+}
+#left{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+#left>h1{
+    color: #575A85;
+}
+#right{
+    background: #575A85;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left>img{
+    height: 50%;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#get-started{
+    padding: 10px 32px;
+    border-radius: 0.4rem;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+#get-started:hover{
+    opacity: 0.5;
+}
+#main{
+    width: 100vw;
+    background-color: black;
+    color: gray;
+    padding: 20px;
+}
+#main>div>h1{
+    text-align: center;
+    color: white;
+}
+#main>div>p{
+    font-size: 17px;
+    font-weight: 900;
+    margin: 8px 0;
+}
+#main>div>div>p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.white{
+    color: white;
+}
+.flexItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 40px 8px 0px;
+}
+
+input{
+    width: 100%;
+    height: 34px;
+    border: 1px solid #575A85;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 12px;
+    background-color: transparent;
+    color: gray;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#showMap{
+    background-color: #575A85;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#showMap>iframe{
+    width: 100%;
+}
+#showMap>h1{
+    margin-bottom: 12px;
+}
+
+#output{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+.box{
+    color: white;
+    padding: 20px;
+    background-color: #575A85;
+    flex: 30%;
+    border-radius: 10px;
+}
+.box>p{
+    margin: 8px 0;
+}
+#div1>div>p{
+    width: 20%;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    #preload{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #left, #right{
+        width: 100vw;
+        height: 50vh;
+    }
+    .box {
+      flex: 100%;
+    }
+    .flexItem{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
