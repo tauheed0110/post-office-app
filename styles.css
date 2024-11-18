@@ -145,5 +145,9 @@ input{
         display: flex;
         flex-direction: column;
     }
+    #div1>div>p{
+    width: 100%;
+    text-align: left;
+   }
 
   }
