@@ -100,7 +100,7 @@ function renderPostOffice(PostOffice){
         <div class="box">
             <p>Name: ${office.Name}</p>
             <p>Branch Type: ${office.BranchType}</p>
-            <p>Delivery Status ${office.DeliverStatus}</p>
+            <p>Delivery Status ${office.DeliveryStatus}</p>
             <p>District: ${office.District}</p>
             <p>Division: ${office.Division}</p>
         </div>
